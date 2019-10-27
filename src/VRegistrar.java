@@ -16,7 +16,7 @@ public class VRegistrar extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textFieldNombreUsuario;
-	private JPasswordField passwordFieldContraseña;
+	private JPasswordField passwordFieldContraseÃ±a;
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
@@ -68,16 +68,16 @@ public class VRegistrar extends JFrame {
 		textFieldNombreUsuario.setBounds(15, 119, 179, 25);
 		contentPane.add(textFieldNombreUsuario);
 		
-		JLabel labelContraseña = new JLabel("Introduce tu contrase\u00F1a:");
-		labelContraseña.setForeground(new Color(0, 102, 153));
-		labelContraseña.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		labelContraseña.setBounds(15, 160, 313, 18);
-		contentPane.add(labelContraseña);
+		JLabel labelContraseÃ±a = new JLabel("Introduce tu contrase\u00F1a:");
+		labelContraseÃ±a.setForeground(new Color(0, 102, 153));
+		labelContraseÃ±a.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		labelContraseÃ±a.setBounds(15, 160, 313, 18);
+		contentPane.add(labelContraseÃ±a);
 		
-		passwordFieldContraseña = new JPasswordField();
-		passwordFieldContraseña.setForeground(Color.GRAY);
-		passwordFieldContraseña.setBounds(15, 194, 179, 29);
-		contentPane.add(passwordFieldContraseña);
+		passwordFieldContraseÃ±a = new JPasswordField();
+		passwordFieldContraseÃ±a.setForeground(Color.GRAY);
+		passwordFieldContraseÃ±a.setBounds(15, 194, 179, 29);
+		contentPane.add(passwordFieldContraseÃ±a);
 		
 		JLabel label = new JLabel("Introduce tu nombre:");
 		label.setForeground(new Color(0, 102, 153));
@@ -143,5 +143,9 @@ public class VRegistrar extends JFrame {
 		button_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		button_1.setBounds(15, 366, 139, 29);
 		contentPane.add(button_1);
+		
+		ButtonGroup bg = new ButtonGroup();
+		bg.add(radioButton);
+		bg.add(rdbtnMasculino);
 	}
 }
